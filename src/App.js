@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from './components/Header';  // นำเข้า Header ที่เราสร้างขึ้นมา
 import PeriodTracker from './components/PeriodTracker';
 import HomePage from './components/HomePage';
+import './App.css';
+import CalendarHeader from './components/CalendarHeader';
 
 function App() {
   // state เพื่อควบคุมการแสดงหน้า HomePage หรือ PeriodTracker
@@ -16,6 +18,7 @@ function App() {
     <div className="container mx-auto">
       {/* แสดงส่วน Header ที่มีการเลือกวัน */}
       <Header />
+      <CalendarHeader />
 
       <h1 className="text-3xl font-bold text-center mt-5">Period Tracker</h1>
 
